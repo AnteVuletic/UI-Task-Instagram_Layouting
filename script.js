@@ -2,7 +2,6 @@ let item = document.querySelectorAll(".content__item");
 let modal = document.querySelector(".modal__wrapper");
 let modalImage = document.querySelector(".modal__image");
 let modalClose = document.querySelector(".modal__close");
-
 document.addEventListener("click",(event)=>{
     if(modal.classList.contains('modal__wrapper-visible')){
         if(event.target === modal || event.target === modalClose){

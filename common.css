@@ -11,6 +11,11 @@ body{
     float:left;
     padding-bottom: calc(320/320 * 100%);
 }
+.item__aspect_ratio::after{
+    content:"";
+    display: table;
+    clear: both;
+}
 .item__aspect_ratio{
     position: relative;
 }
@@ -20,11 +25,6 @@ body{
     height: 100%;
     bottom: 0;
     left: 0;
-}
-.item__aspect_ratio::after{
-    content:"";
-    display: table;
-    clear: both;
 }
 .insta_icon__logo, .insta_icon__textlogo, .top_wrapper__more,.icons__heart,.icons__comment,.icons__upload{
     background-image: url("./resources/icons-sprite_small.png");
@@ -189,7 +189,6 @@ body{
 .navigation__search{
     box-sizing: border-box;
     height: fit-content;
-    display: inline-block;
     border: 1px solid rgba(125,125,125,0.3);
     border-radius: 5px;
     padding: 0px 70px;
@@ -216,7 +215,7 @@ body{
     color: gray;
 }
 .navigation__search:hover input{
-    display: inline-block;
+    display: inline-table;
 }
 .navigation__search:hover span{
     display: none;
@@ -242,5 +241,16 @@ body{
 }
 .posts__text, .followers__text , .following__text{
     color: rgba(125,125,125,0.7);
+    display: block;
+}
+.details__user{
+    font-weight: bold;
+}
+.footer__date{
+    font-size: 12px;
+    color: rgba(135,135,135)
+}
+.footer__statistics{
+    font-weight: bold;
     display: block;
 }
