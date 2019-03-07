@@ -3,6 +3,9 @@
     margin-left: auto;
     margin-right: auto;
 }
+.info__statistics--mobile{
+    display: none;
+}
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +81,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 3;
 }
 .modal{
     background-color: white;
@@ -135,6 +139,16 @@
     font-size: 12px;
     color: rgba(135,135,135)
 }
+.details__footer--mobile{
+    display: none;
+}
+.modal__close{
+    position: absolute;
+    top: 0.5%;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+}
 @media screen and (max-width: 1024px){
     .content__wrapper, .description{
         width: 95%;
@@ -171,11 +185,108 @@
         display: none;
     }
     .description{
-        flex-direction: column;
         padding-top: 20%;
     }
     .description__info{
         width: 100%;
         padding-right: 0;
+    }
+    .info__statistics{
+        display: none;
+    }
+    .info__statistics--mobile{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(125,125,125,0.2);
+        border-bottom: 1px solid rgba(125,125,125,0.2);
+        padding: 10px 0;
+    }
+    .statistics__posts, .statistics__followers, .statistics__following{
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+    }
+    .filtering span{
+        display: none;
+    }
+    .filtering{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .posts__icon{
+        background-image: url("./resources/icons-sprite_small.png");
+        background-position: -52px -211px;
+        height: 24px;
+        width: 24px;
+    }
+    .tagged__icon{
+        background-image: url("./resources/icons-sprite_small.png");
+        background-position: -241px -208px;
+        height: 24px;
+        width: 24px;
+    }
+    .filtering__button-selected{
+        border: 0;
+    }
+    .modal{
+        position: absolute;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .details__header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: white;
+    }
+    .modal__image{
+        margin-top: 21%;
+        width: 100%;
+    }
+    .modal__details{
+        display: block;
+        width: 100%;
+    }
+    .details__footer--mobile{
+        display: block;
+    }
+    .details__footer{
+        display: none;
+    }
+    .footer__icons{
+        padding: 0;
+        border: 0;
+    }
+    .details__header img{
+        padding: 1.5% 2.5%;
+    }
+    .modal__close{
+        color: black;
+        top: 2.75%;
+        right: 10%;
+        z-index: 4;
+    }
+    .description__profile{
+        display: inline-block;
+        position: absolute;
+        margin-left: 5%;
+    }
+    .description__profile > img{
+        width: 50%;
+    }
+    .info__top_wrapper{
+        margin-left: 30%;
+    }
+    .top_wrapper__handle{
+        display: block;
+        margin: 5% 0 0 0;
     }
 }

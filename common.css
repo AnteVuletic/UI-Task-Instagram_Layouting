@@ -225,3 +225,22 @@ body{
     background-color: white;
     padding: 0 10px;
 }
+.statistics__posts{
+    display: inline-block;
+}
+.statistics__followers{
+    display: inline-block;
+}
+.statistics__following{
+    display: inline-block;
+}
+.info__statistics span{
+    font-weight: bold;
+}
+.posts__stats, .followers__stats ,.following__stats{
+    font-weight: bold;
+}
+.posts__text, .followers__text , .following__text{
+    color: rgba(125,125,125,0.7);
+    display: block;
+}
