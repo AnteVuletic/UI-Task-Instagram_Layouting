@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="table.css">
     <title>Instagram-table</title>
 </head>
+
 <body>
     <table class="header">
         <tr>
@@ -59,18 +61,18 @@
                 <table>
                     <tr class="description__profile">
                         <td>
-                            <img class="top_wrapper__icon" src="./resources/profile.jpg"/>     
+                            <img class="top_wrapper__icon" src="./resources/profile.jpg" />
+                        </td>
+                    </tr>
+                    <tr class="info__top_wrapper">
+                        <td>
+                            <h2 class="top_wrapper__handle">dumpovci</h2>
+                            <button class="button top_wrapper__follow">Prati</button>
                         </td>
                     </tr>
                     <tr class="description__info">
                         <td>
                             <table>
-                                <tr>
-                                    <td class="info__top_wrapper">
-                                        <h2 class="top_wrapper__handle">dumpovci</h2>
-                                        <button class="button top_wrapper__follow">Prati</button>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td class="info__statistics">
                                         <table>
@@ -84,13 +86,13 @@
                                                 <td class="statistics__followers">
                                                     Pratitelja:
                                                     <span>
-                                                        722 
+                                                        722
                                                     </span>
                                                 </td>
                                                 <td class="statistics__following">
                                                     Prati:
                                                     <span>
-                                                        127 
+                                                        127
                                                     </span>
                                                 </td>
                                             </tr>
@@ -102,50 +104,100 @@
                                 <tr>
                                     <td class="info__text">
                                         <h3 class="text__name">DUMP Udruga mladih programera</h3>
-                                        <p class="text__description">Udruga mladih iz Splita usmjerena na izgradnju zajednice, širenje entuzijazma, suradnju članova i pomoć budućim generacijama.
+                                        <p class="text__description">Udruga mladih iz Splita usmjerena na izgradnju
+                                            zajednice, širenje entuzijazma, suradnju članova i pomoć budućim
+                                            generacijama.
                                             <a href="bit.ly/2U8tH2U">
                                                 bit.ly/2U8tH2U
                                             </a>
                                         </p>
                                     </td>
                                 </tr>
+                                <tr class="info__statistics--mobile">
+                                    <td class="statistics__posts">
+                                        <span class="posts__text">
+                                            Broj objava:
+                                        </span>
+                                        <span class="posts__stats">
+                                            181
+                                        </span>
+                                    </td>
+                                    <td class="statistics__followers">
+                                        <span class="followers__text">
+                                            Pratitelja:
+                                        </span>
+                                        <span class="followers__stats">
+                                            722
+                                        </span>
+                                    </td>
+                                    <td class="statitics__following">
+                                        <span class="following__text">
+                                            Prati:
+                                        </span>
+                                        <span class="following__stats">
+                                            127
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+    <table class="main">
+        <tr>
+            <td class="filtering">
+                <button class="filtering__button filtering__button-selected">
+                    <div class="posts__icon"></div>
+                    <span>Posts</span>
+                </button>
+                <button class="filtering__button">
+                    <div class="tagged__icon"></div>
+                    <span>Tagged</span>
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td  class="content__wrapper">
+                <table>
+                    <tr class="content__row">
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/ojbavajedan.jpg" alt="#">
+                                    </td>
+                                </tr>
                             </table>
                             <table>
                                 <tr>
-                                    <td class="info__statistics--mobile">
-                                        <table>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="statistics__posts">
-                                                    <span class="posts__text">
-                                                        Broj objava:
-                                                    </span>
-                                                    <span class="posts__stats">
-                                                        181
-                                                    </span>
+                                                <td>
+                                                    <span>69</span>
                                                 </td>
-                                            </tr>
-                                        </table>
-                                        <table>
-                                            <tr>
-                                                <td class="statistics__followers">
-                                                    <span class="followers__text">
-                                                        Pratitelja:
-                                                    </span>
-                                                    <span class="followers__stats">
-                                                        722 
-                                                    </span>
+                                                <td class="statistics__heart_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__heart"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
-                                            </tr>
-                                        </table>
-                                        <table>
-                                            <tr>
-                                                <td class="statitics__following">
-                                                    <span class="following__text">
-                                                        Prati:
-                                                    </span>
-                                                    <span class="following__stats">
-                                                        127 
-                                                    </span>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
@@ -153,443 +205,315 @@
                                 </tr>
                             </table>
                         </td>
-                    </tr>
-                </table>
-                <table class="description__info">
-                    <tr>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <table class="main">
-        <tr>
-            <td class="content__wrapper">
-                <table>
-                    <tr>
-                        <td class="filtering">
-                            <button class="filtering__button filtering__button-selected">
-                                <div class="posts__icon"></div>
-                                <span>Posts</span>
-                            </button>
-                            <button class="filtering__button">
-                                <div class="tagged__icon"></div>
-                                <span>Tagged</span>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="content">
+                        <td class="content__item">
                             <table>
-                                <tr class="content__row">
-                                    <td class="content__item">
-                                        <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavadva.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="item__content item__aspect_ratio">
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/ojbavajedan.jpg" alt="#">
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <table>
-                                                        <tr>
-                                                            <td class="item__statistics">
-                                                                <table class="statistics__hover">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__heart_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__heart"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__chat_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__chat"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>  
-                                                            </td>
+                                                            <td class="statistics__heart"></td>
                                                         </tr>
                                                     </table>
                                                 </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td class="content__item">
-                                        <table>
-                                            <tr>
-                                                <td class="item__content .item__aspect_ratio">
-                                                    <table>
-                                                        <tr>
-                                                            <td>
-                                                                <img src="./resources/objavadva.jpg" alt="#">
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                    <table>
-                                                        <tr>
-                                                            <td class="item__statistics">
-                                                                <table class="statistics__hover">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__heart_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__heart"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__chat_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__chat"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>  
-                                                            </td>
-                                                        </tr>
-                                                    </table>
+                                                <td>
+                                                    <span>69</span>
                                                 </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td class="content__item">
-                                        <table>
-                                            <tr>
-                                                <td class="item__content .item__aspect_ratio">
+                                                <td class="statistics__chat_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/objavatri.jpg" alt="#">
-                                                            </td>
+                                                            <td class="statistics__chat"></td>
                                                         </tr>
                                                     </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
-                                <tr class="content__row">
-                                    <td class="content__item">
-                                        <table>
-                                            <tr>
-                                                <td class="item__content .item__aspect_ratio">
-                                                    <table>
-                                                        <tr>
-                                                            <td>
-                                                                <img src="./resources/objavacetri.jpg" alt="#">
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
-                                                </td>
-                                            </tr>
-                                        </table>
+                            </table>
+                        </td>
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavatri.jpg" alt="#">
                                     </td>
-                                    <td class="content__item">
-                                        <table>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="item__content .item__aspect_ratio">
-                                                    <table>
-                                                        <tr>
-                                                            <td>
-                                                                <img src="./resources/objavapet.jpg" alt="#">
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
+                                                <td>
+                                                    <span>69</span>
                                                 </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td class="content__item">
-                                        <table>
-                                            <tr>
-                                                <td class="item__content .item__aspect_ratio">
+                                                <td class="statistics__heart_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/objavasest.jpg" alt="#">
-                                                            </td>
+                                                            <td class="statistics__heart"></td>
                                                         </tr>
                                                     </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
-                                <tr class="content_row">
-                                    <td class="content__item">
-                                        <table>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="content__row">
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavacetri.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="item__content .item__aspect_ratio">
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/objavasedam.jpg" alt="#">
-                                                            </td>
+                                                            <td class="statistics__heart"></td>
                                                         </tr>
                                                     </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="content__item">
-                                        <table>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavapet.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="item__content .item__aspect_ratio">
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/objavaosam.jpg" alt="#">
-                                                            </td>
+                                                            <td class="statistics__heart"></td>
                                                         </tr>
                                                     </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                         <tr>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__heart_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__heart"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                             <td>
-                                                                                 <span>69</span>
-                                                                             </td>
-                                                                             <td class="statistics__chat_wrapper">
-                                                                                 <table>
-                                                                                     <tr>
-                                                                                         <td class="statistics__chat"></td>
-                                                                                     </tr>
-                                                                                 </table>
-                                                                             </td>
-                                                                         </tr>
-                                                                     </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
-                                    <td class="content__item">
-                                        <table>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavasest.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
                                             <tr>
-                                                <td class="item__content .item__aspect_ratio">
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
                                                     <table>
                                                         <tr>
-                                                            <td>
-                                                                <img src="./resources/objavadevet.jpg" alt="#">
-                                                            </td>
+                                                            <td class="statistics__heart"></td>
                                                         </tr>
                                                     </table>
-                                                     <table>
-                                                         <tr>
-                                                             <td class="item__statistics">
-                                                                 <table class="statistics__hover">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__heart_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__heart"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                        <td>
-                                                                            <span>69</span>
-                                                                        </td>
-                                                                        <td class="statistics__chat_wrapper">
-                                                                            <table>
-                                                                                <tr>
-                                                                                    <td class="statistics__chat"></td>
-                                                                                </tr>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                             </td>
-                                                         </tr>
-                                                     </table>   
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="content_row">
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavasedam.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
+                                            <tr>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__heart"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavaosam.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
+                                            <tr>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__heart"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="content__item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="./resources/objavadevet.jpg" alt="#">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="item__statistics">
+                                        <table class="statistics__hover">
+                                            <tr>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__heart_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__heart"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <span>69</span>
+                                                </td>
+                                                <td class="statistics__chat_wrapper">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="statistics__chat"></td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
@@ -602,16 +526,39 @@
             </td>
         </tr>
     </table>
-    <table class="modal__wrapper-visible modal__wrapper">
+    <table class="modal__wrapper">
         <tr>
             <td class="modal__close">
                 <span>&#x00D7</span>
             </td>
             <td>
                 <table class="modal">
+                    <tr class="details__header-mobile">
+                            <td class="header__right">
+                                <table>
+                                    <tr>
+                                        <td class="header__image">
+                                            <img src="./resources/profile.jpg" />
+                                        </td>
+                                        <td class="header__details">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <span class="details__user">dumpovci</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="button details__follow">Prati</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
                     <tr class="modal__image">
                         <td>
-                            <img src="./resources/objava_table.jpg"/>
+                            <img src="./resources/objava_table.jpg" />
                         </td>
                     </tr>
                     <tr class="modal__content">
@@ -621,10 +568,20 @@
                                     <td class="header__right">
                                         <table>
                                             <tr>
-                                                <td>
-                                                    <img src="./resources/profile.jpg"/>
-                                                    <span class="details__user">dumpovci</span>
-                                                    <a href="#" class="button details__follow">Prati</a>
+                                                <td class="header__image">
+                                                    <img src="./resources/profile.jpg" />
+                                                </td>
+                                                <td class="header__details">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="details__user">dumpovci</span>
+                                                            </td>
+                                                            <td>
+                                                                <a href="#" class="button details__follow">Prati</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
@@ -652,18 +609,21 @@
                                     <td class="modal__details">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         Pellentesque sodales sapien quis metus accumsan, sed bibendum nulla semper.
-                                        In porta lectus at commodo pellentesque. 
-                                        Sed quis ligula eget nisl fermentum hendrerit ac in est. 
+                                        In porta lectus at commodo pellentesque.
+                                        Sed quis ligula eget nisl fermentum hendrerit ac in est.
                                         Pellentesque ullamcorper feugiat mauris ac porttitor.
                                         Proin at sagittis mi.
                                         Nunc porttitor nunc finibus, posuere urna a, iaculis neque.
-                                        Morbi eleifend orci et orci placerat, eget aliquam erat luctus. 
-                                        Etiam consectetur, metus sed molestie mollis, lacus mi commodo enim, id laoreet justo augue ut dui. 
-                                        Proin varius augue ac orci condimentum congue. 
-                                        Sed at mollis urna. Sed lobortis finibus interdum. 
-                                        Mauris laoreet, sapien id faucibus tempor, tellus turpis dictum lacus, quis cursus orci quam dictum eros. 
-                                        Donec a tempor quam. 
-                                        Integer facilisis, justo sed tincidunt tempor, lacus urna eleifend ligula, eu pharetra lectus lacus vitae erat. 
+                                        Morbi eleifend orci et orci placerat, eget aliquam erat luctus.
+                                        Etiam consectetur, metus sed molestie mollis, lacus mi commodo enim, id laoreet
+                                        justo augue ut dui.
+                                        Proin varius augue ac orci condimentum congue.
+                                        Sed at mollis urna. Sed lobortis finibus interdum.
+                                        Mauris laoreet, sapien id faucibus tempor, tellus turpis dictum lacus, quis
+                                        cursus orci quam dictum eros.
+                                        Donec a tempor quam.
+                                        Integer facilisis, justo sed tincidunt tempor, lacus urna eleifend ligula, eu
+                                        pharetra lectus lacus vitae erat.
                                         Integer tempus tincidunt facilisis.
                                     </td>
                                 </tr>
@@ -679,7 +639,7 @@
                                                             <td class="icons__upload"></td>
                                                         </tr>
                                                     </table>
-                                                </td>                                                
+                                                </td>
                                             </tr>
                                         </table>
                                         <table>
@@ -701,4 +661,5 @@
     </table>
 </body>
 <script src="script.js"></script>
+
 </html>

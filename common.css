@@ -11,11 +11,6 @@ body{
     float:left;
     padding-bottom: calc(320/320 * 100%);
 }
-.item__aspect_ratio::after{
-    content:"";
-    display: table;
-    clear: both;
-}
 .item__aspect_ratio{
     position: relative;
 }
@@ -25,6 +20,11 @@ body{
     height: 100%;
     bottom: 0;
     left: 0;
+}
+.item__aspect_ratio::after{
+    content:"";
+    display: table;
+    clear: both;
 }
 .insta_icon__logo, .insta_icon__textlogo, .top_wrapper__more,.icons__heart,.icons__comment,.icons__upload{
     background-image: url("./resources/icons-sprite_small.png");
@@ -253,4 +253,18 @@ body{
 .footer__statistics{
     font-weight: bold;
     display: block;
+}
+@media screen and (max-width: 375px){
+    .posts__icon{
+        background-image: url("./resources/icons-sprite_small.png");
+        background-position: -52px -211px;
+        height: 24px;
+        width: 24px;
+    }
+    .tagged__icon{
+        background-image: url("./resources/icons-sprite_small.png");
+        background-position: -241px -208px;
+        height: 24px;
+        width: 24px;
+    }
 }

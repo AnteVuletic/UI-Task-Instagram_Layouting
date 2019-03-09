@@ -26,12 +26,6 @@
     justify-content: space-between;
     z-index: 2;
 }
-.navigation__search{
- 
-}
-.navigation__insta_icon{
-    overflow: hidden;
-}
 .insta_icon__logo{
     display: inline-block;
     padding: 3px;
@@ -170,6 +164,9 @@
     }
 }
 @media screen and (max-width: 375px){
+    .info__text{
+        padding: 0px 10px;
+    }
     .insta_icon__logo{
         display: none;
     }
@@ -205,18 +202,6 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
-    }
-    .posts__icon{
-        background-image: url("./resources/icons-sprite_small.png");
-        background-position: -52px -211px;
-        height: 24px;
-        width: 24px;
-    }
-    .tagged__icon{
-        background-image: url("./resources/icons-sprite_small.png");
-        background-position: -241px -208px;
-        height: 24px;
-        width: 24px;
     }
     .filtering__button-selected{
         border: 0;
