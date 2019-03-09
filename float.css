@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+.info__statistics--mobile{
+    display: none;
+}
+.navigation{
+    display: block;
+    background-color: white;
+    overflow: hidden;
+    padding: 1% 20%;
+    position: relative;
+}
+.navigation__insta_icon,.navigation__center{
+    float: left;
+}
+.navigation__right{
+    float: right;
+}
+.navigation__insta_icon,.navigation__right{
+    width: 25%;
+}
+.navigation__center{
+    width: 50%;
+}
+.navigation__search{
+    width: 50%;
+    margin: 0 auto;
+}
+.insta_icon__logo,.insta_icon__textlogo{
+    float: left;
+}
+.description{
+    display: block;
+    overflow: hidden;
+    padding: 0 20%;
+}
+.description__profile{
+    float: left;
+    padding: 5%;
+}
+.content__wrapper{
+    padding: 0 20%;
+    overflow: hidden;
+}
+.content__item{
+    float: left;
+    width: 31%;
+    margin: 0.5% 1%;
+}
+.modal__wrapper{
+    display: none;
+}
+.modal__wrapper-visible{
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.modal{
+    display: block;
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10%;
+}
+.modal__image{
+    float: left;
+    width: 65%;
+}
+.details__footer--mobile{
+    display: none;
+}
+.modal__details{
+    float: right;
+    width: 35%;
+    padding: 0 2%;
+}
+.details__header > img {
+    border-radius: 50%;
+    width: 50px;
+    position: absolute;
+}
+.details__header{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(125,125,125,0.7);
+    padding: 10px 0;
+}
+.details__header > img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    position: absolute;
+}
+.header__right{
+    display: inline-block;
+    padding: 5% 0 5% 25%;
+}
+.details__content{
+    display: block;
+    height: 380px;
+    overflow: scroll;
+    padding: 5% 0;
+}
+.footer__icons{
+    border-top: 1px solid rgba(125,125,125,0.7);
+    padding: 5%;
+}
+.modal__close{
+    position: absolute;
+    top: 0.5%;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+}
+.top_wrapper__handle{
+    display: inline-block;
+}
+@media screen and (max-width: 1024px){
+    .navigation{
+        padding: 1% 0;
+    }
+    .navigation__search{
+        width: 39%;
+    }
+    .navigation__insta_icon{
+        padding-left: 2%;
+    }
+    .description{
+        padding: 0 5%;
+    }
+    .info__text{
+        width: 80%;
+    }
+    .content__wrapper{
+        padding: 0;
+    }
+    .modal{
+        width: 97.5%;
+    }
+    .details__content{
+        height: 450px;
+    }
+    .modal{
+        margin-top: 35%;
+    }
+}
+@media screen and (max-width: 768px){
+    .details__content{
+        height: 300px;
+    }
+    .navigation__search {
+        width: 53%;
+    }
+    .navigation__right{
+        width: 28%;
+    }
+    .navigation__insta_icon{
+        width: 20%;
+        padding-left: 3%;
+    }
+    .modal{
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width: 375px){
+    .navigation__search{
+        display: none;
+    }
+    .insta_icon__logo{
+        display: none;
+    }
+    .navigation__right{
+        width: 60%;
+    }
+    .navigation__insta_icon{
+        padding: 1%;
+    }
+    .info__statistics{
+        display: none;
+    }
+    .text__name{
+        font-size: 14px;
+    }
+    .description__profile > img{
+        width: 50%;
+    }
+    .text__description{
+        width: 100%;
+        font-size: 12px;
+    }
+    .filtering__button > span{
+        display: none;
+    }
+    .filtering__button-selected{
+        border: 0;
+    }
+    .filtering__button{
+        width: 48%;
+    }
+    .filtering{
+        margin: 0;
+        width: unset;
+    }
+    .modal{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .details__header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: white;
+    }
+    .modal__image{
+        margin-top: 21%;
+        width: 100%;
+    }
+    .modal__details{
+        display: block;
+        width: 100%;
+    }
+    .details__footer--mobile{
+        padding: 5% 0;
+        display: block;
+    }
+    .details__footer{
+        display: none;
+    }
+    .footer__icons{
+        padding: 0;
+        border: 0;
+    }
+    .details__header img{
+        padding: 1.5% 2.5%;
+    }
+    .modal__close{
+        color: black;
+        top: 2.75%;
+        right: 10%;
+        z-index: 4;
+    }
+}

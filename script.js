@@ -6,6 +6,7 @@ document.addEventListener("click",(event)=>{
     if(modal.classList.contains('modal__wrapper-visible')){
         if(event.target === modal || event.target === modalClose){
             modal.classList.remove('modal__wrapper-visible');
+            modalImage.removeChild(modalImage.childNodes[1]);
         }
     }
     for(let element of item){
