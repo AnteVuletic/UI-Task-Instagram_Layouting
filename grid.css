@@ -1,0 +1,305 @@
+.navigation__insta_icon{
+    grid-area: navigation__insta_icon;
+    overflow:hidden;
+}
+.navigation__search{
+    grid-area: navigation__search;
+}
+.navigation__right{
+    grid-area: navigation__right;
+    margin-left: auto;
+}
+.navigation{
+    padding: 1% 0;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+    ". navigation__insta_icon navigation__search navigation__right .";
+}
+.insta_icon__logo, .insta_icon__horizontal, .insta_icon__textlogo{
+    display: inline-block;
+}
+.insta_icon__logo{
+    padding: 1%;
+}
+.insta_icon__horizontal{
+    height: 100%;
+    width: 0.5%;
+    background-color: black;
+}
+.navigation__search{
+    margin: 1.5% 15%;
+}
+.description__profile{
+    grid-area: description__profile;
+    padding: 10% 24%;
+}
+.info__top_wrapper{
+    grid-area: info__top_wrapper;
+}
+.info__statistics{
+    grid-area: info__statistics;
+}
+.info__text{
+    grid-area: info__text;
+}
+.description{
+    display: grid;
+    grid-template-columns: 20% 20% 40% 20%;
+    grid-template-areas:
+    ". description__profile info__top_wrapper  ."
+    ". description__profile info__statistics ."
+    ". description__profile info__text ."
+}
+.top_wrapper__handle{
+    display: inline-block;
+}
+.content__wrapper{
+    display: block;
+    padding: 0 20%;
+}
+.content{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.content__item{
+    margin: 2%;
+}
+.modal__wrapper{
+    display: none;
+}
+.modal__wrapper-visible{
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+.modal__image{
+    grid-area: modal__image;
+    padding: 0 5%;
+}
+.details__header{
+    grid-area: details__header;
+    padding: 0 5%;
+}
+.details__content{
+    grid-area: details__content;
+    padding: 0 5%;
+}
+.details__footer{
+    grid-area: details__footer;
+    padding: 0 5%;
+}
+.footer__date{
+    grid-area: footer__date;
+    padding: 1% 5%;
+}
+.modal{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas:
+    "modal__image details__header"
+    "modal__image details__content"
+    "modal__image details__footer"
+    "modal__image footer_date";
+    background-color: white;
+    margin-top: 10%;
+    width: 60%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal__details{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.details__header{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(125,125,125,0.7);
+    padding: 10px 0;
+}
+.details__header > img{
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    position: absolute;
+    padding: 0 5%;
+}
+.header__right{
+    display: inline-block;
+    padding: 5% 0 5% 25%;
+}
+.details__content{
+    display: block;
+    overflow: scroll;
+    margin: 5% 0;
+}
+.footer__icons{
+    border-top: 1px solid rgba(125,125,125,0.7);
+    padding: 5%;
+}
+.details__footer--mobile{
+    display: none;
+}
+.modal__close{
+    position: absolute;
+    top: 0.5%;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+}
+@media screen and (max-width: 1024px){
+    .navigation{
+        grid-template-columns: 30% 10% 20% 10% 30%;
+       grid-template-areas: 
+       "navigation__insta_icon . navigation__search . navigation__right";
+    }
+    .navigation__search {
+        margin: 2% 0;
+        padding: 0 30%;
+    }
+    .navigation__right{
+        padding: 0 5px;
+    }
+    .navigation__insta_icon{
+        padding: 0 10px;
+    }
+    .description{
+        display: grid;
+        grid-template-columns: 30% 60%;
+        grid-template-areas:
+        "description__profile info__top_wrapper "
+        "description__profile info__statistics"
+        "description__profile info__text"
+    }
+    .content__wrapper{
+        padding: 0 2.5%;
+    }
+    .modal{
+        width: 92.5%;
+        height: 50%;
+        margin-top: 30%;
+    }
+}
+@media screen and ( max-width: 768px){
+    .description__profile {
+        padding: 20% 24%;
+    }
+}
+@media screen and ( max-width: 375px){
+    .insta_icon__logo{
+        display: none;
+    }
+    .navigation__search{
+        display: none;
+    }
+    .navigation{
+        grid-template-columns: 30% 70%;
+       grid-template-areas: 
+       "navigation__insta_icon navigation__right";
+    }
+    .navigation__right {
+        padding: 3% 5px;
+    }
+    .description__profile > img{
+        width: 100%;
+    }
+    .info__text{
+        padding: 0 5%;
+    }
+    .text__name{
+        margin: 0;
+        font-size: 15px;
+    }
+    .text__description{
+        margin: 0;
+        font-size: 13px;
+        padding-right: 10%;
+        padding-bottom: 2%;
+    }
+    .description{
+        grid-template-columns: 33% 33% 33%;
+        grid-template-areas:
+        "description__profile info__top_wrapper ."
+        "info__text info__text info__text"
+        "info__statistics info__statistics info__statistics";
+    }
+    .top_wrapper__handle {
+        margin: 15% 0 0 0;
+    }
+    .info__statistics{
+        border-top: 1px solid rgba(125,125,125,0.2);
+        border-bottom: 1px solid rgba(125,125,125,0.2);
+    }
+    .info__statistics > div > div{
+        color:  rgba(125,125,125,0.7);
+    }
+    .info__statistics > div > span{
+        font-size: 13px;
+    }
+    .statistics__posts, .statistics__followers, .statistics__following{
+        display: inline-block;
+        width: 32.5%;
+        padding: 5% 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .filtering__button-selected{
+        border: 0;
+    }
+    .filtering__button > span{
+        display: none;
+    }
+    .filtering{
+        width: 100%;
+    }
+    .filtering__button{
+        width: 49%;
+    }
+    .content__item{
+        margin: 0;
+    }
+    .content__wrapper{
+        padding: 0;
+    }
+    .content{
+        grid-gap: 1%;
+    }
+    .details__content{
+        height: 300px;
+    }
+    .modal{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        top: 0;
+        left: 0;
+        margin: 0;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "details__header"
+        "modal__image"
+        "details__footer"
+        "details__content"
+        "footer__date";
+    }
+    .modal__close{
+        color: black;
+        top: 2.75%;
+        right: 10%;
+        z-index: 4;
+    }
+    .details__header > img{
+        padding: 1% 5%;
+    }
+}
